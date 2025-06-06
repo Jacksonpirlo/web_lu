@@ -324,6 +324,10 @@ footer {
         margin: 20px;
     }
 
+    .contact {
+        align-items: center;
+    }
+
     .list_skills {
         width: 900px !important;
     }
