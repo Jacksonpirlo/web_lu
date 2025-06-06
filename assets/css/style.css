@@ -91,7 +91,7 @@ main {
 .main_presentation h4 {
     margin: 10x;
     font-size: 30px;
-    margin-left: 30px;
+    margin-left: 5px;
 }
 
 .title {
@@ -266,6 +266,10 @@ footer {
         flex-wrap: wrap;
     }
 
+    .main_presentation h4 {
+        margin-left: 30px;
+    }
+
     .projects .card_container {
         flex-direction: row;
         flex-wrap: wrap;
@@ -306,6 +310,10 @@ footer {
 
     .nav-main div h1 {
         font-size: 50px !important;
+    }
+
+    .main_presentation h4 {
+        margin-left: 30px;
     }
 
     nav {
