@@ -24,8 +24,11 @@ section .nav-main {
 
 }
 
+.nav-main div h1 {
+    font-family: "Mrs Saint Delafield", cursive;
+}
+
 h1 {
-  font-family: "Mrs Saint Delafield", cursive;
   font-weight: 500;
   font-style: normal;
   font-size: 30px;
@@ -131,6 +134,27 @@ main .main_presentation button {
     width: 100px;
 }
 
+.list_skills ul {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    list-style: none;
+}
+
+.list_skills ul li {
+    margin: 10px;
+    background-color: #be90fa;
+    padding: 10px;
+    border-radius: 10px;
+    color: #330372;
+    transition: all 1s ease;
+}
+
+.list_skills ul li:hover {
+    background-color: #543b75;
+    transition: all 1s ease;
+}
+
 .card_container .card {
     padding: 15px;
     border: 5px solid #fdc7ff25;
@@ -156,6 +180,32 @@ main .main_presentation button {
     color: #543b75;
 }
 
+.projects_marketing {
+    text-align: center;
+}
+
+.projects_marketing ol {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px;
+}
+
+.projects_marketing ol li a {
+    font-weight: bold;
+    text-decoration: none;
+    color: #000;
+}
+
+.projects_marketing ol li {
+    margin: 10px;
+    background-color: #b47bff;
+    color: #3a0069;
+    padding: 20px;
+    border-radius: 10px;
+}
+
 .contact {
     display: flex;
     justify-content: center;
@@ -173,6 +223,8 @@ main .main_presentation button {
     display: flex;
     flex-direction: column;
     padding: 30px;
+    background-color: #f588ff13;
+    border-radius: 20px;
 }
 
 form label {
@@ -195,4 +247,98 @@ footer {
     text-align: center;
     padding: 20px;
     background-color: #f1efee;
+}
+
+/* pc */
+
+@media screen and (min-width: 800px) {
+
+    article img {
+        width: 150px !important;
+    }
+
+    .skills article ul {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .projects .card_container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        font-size: 20px;
+    }
+
+    .card_container button {
+        font-size: 20px;
+    }
+
+    .card_container img {
+        width: 500px !important;
+    }
+
+    .projects_marketing {
+        margin: 20px;
+    }
+
+    .projects_marketing h1 {
+        margin: 10px;
+    }
+
+    .projects_marketing ol {
+        width: 700px !important;
+    }
+
+    .contact {
+        padding: 70px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+
+    .socials a img {
+        width: 40px;
+        margin: 10px;
+    }
+
+    .nav-main div h1 {
+        font-size: 50px !important;
+    }
+
+    nav {
+        font-size: 25px;
+    }
+
+    nav .list li {
+        background-color: #dcc2ff;
+    }
+
+    nav .list li:hover {
+        background-color: #b27df7;
+    }
+
+    .skills {
+        margin: 20px;
+    }
+
+    .list_skills {
+        width: 900px !important;
+    }
+
+    .card p {
+        width: 700px;
+    }
+
+    .projects_marketing {
+        font-size: 19px;
+    }
+
+    form {
+        align-items: center;
+        width: 600px;
+        font-size: 20px;
+    }
+
+    footer {
+        padding: 30px;
+    }
 }
