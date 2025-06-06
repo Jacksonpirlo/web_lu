@@ -24,6 +24,10 @@ section .nav-main {
 
 }
 
+.section {
+    align-items: center;
+}
+
 .nav-main div h1 {
     font-family: "Mrs Saint Delafield", cursive;
 }
